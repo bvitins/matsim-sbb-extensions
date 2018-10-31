@@ -53,6 +53,8 @@ public class SwissRailRaptor implements TransitRouter {
     private final Map<String, RoutingModule> routingModules;
 
     private boolean treeWarningShown = false;
+    
+    private double billionFactor = 1_000_000_000.0;// TODO
 
     public SwissRailRaptor(final SwissRailRaptorData data, RaptorParametersForPerson parametersForPerson,
                            RaptorRouteSelector routeSelector, RaptorIntermodalAccessEgress intermodalAE) {
